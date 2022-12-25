@@ -81,9 +81,9 @@ points = Point()
 # f1(x) < y < f2(x)
 # z = f(x,y)
 class F:
-    def __init__(self, a, b, f1, f2, f, theta=0):
+    def __init__(self, a, b, f1_, f2_, f, theta=0):
         mini_x = (b - a) / (_W + _L + _H)
-        c, d = f1(a), f2(b)
+        c, d = f1_(a), f2_(b)
         mini_y = (d - c) / (_W + _L + _H)
         for x_split in range(_W + _L + _H):
             x_i = mini_x * x_split
